@@ -303,8 +303,7 @@ def portfolio_matrix(rows, currency, theme="light", height=470):
             size=sizes, sizemode="diameter",
             color=[_alpha(c, 0.6) for c in colours],
             line=dict(color=colours, width=1.5)),
-        text=texts, hovertemplate="%{text}<extra></extra>",
-        customdata=[r["product"]["id"] for r in rows],
+        text=texts, hovertemplate="%{text}<extra></extra>"
     ))
 
     # Direct labels for the four largest bubbles.

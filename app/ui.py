@@ -197,15 +197,15 @@ def empty_state(title: str, body: str = "", icon: str = "◍") -> str:
 </div>"""
 
 
-def brand(org_name: str) -> str:
-    theme_mark = f"""<svg width="18" height="18" viewBox="0 0 64 64" aria-hidden="true">
-      <rect x="10" y="34" width="10" height="18" rx="3.5" fill="{color('s1')}"/>
-      <rect x="27" y="23" width="10" height="29" rx="3.5" fill="{color('s3')}"/>
-      <rect x="44" y="12" width="10" height="40" rx="3.5" fill="{color('s4')}"/>
+def brand() -> str:
+    mark = f"""<svg width="19" height="19" viewBox="0 0 64 64" aria-hidden="true">
+      <rect x="8" y="32" width="11" height="24" rx="4" fill="{color('s1')}"/>
+      <rect x="26.5" y="19" width="11" height="37" rx="4" fill="{color('s3')}"/>
+      <rect x="45" y="8" width="11" height="48" rx="4" fill="{color('s4')}"/>
     </svg>"""
-    return (f'<div class="dpv-brand"><div class="mark">{theme_mark}</div>'
-            f'<div><div class="name">Data Product Value</div>'
-            f'<div class="org">{esc(org_name)}</div></div></div>')
+    return (f'<a class="dpv-brand" href="/" target="_self">'
+            f'<span class="mark">{mark}</span>'
+            f'<span class="name">Data Product Value</span></a>')
 
 
 def disclaimer() -> str:

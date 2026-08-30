@@ -53,7 +53,7 @@ nav = st.navigation(list(pages.values()), position="hidden")
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     settings = store.settings()
-    write(brand(settings["organisationName"]))
+    write(brand())
 
     for key, title, icon, _path in NAV:
         if key == "product":

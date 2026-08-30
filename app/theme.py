@@ -251,15 +251,22 @@ hr {{ border-color: var(--hairline); }}
 .dpv-rule {{ height: 1px; background: var(--hairline); margin: 18px 0; }}
 
 /* Sidebar identity block */
-.dpv-brand {{ display: flex; align-items: center; gap: 10px; padding: 4px 6px 14px; }}
+.dpv-brand {{
+  display: flex; align-items: center; gap: 11px; padding: 6px 6px 16px;
+  text-decoration: none !important; cursor: pointer; border-radius: 10px;
+  margin: -2px -2px 0; transition: background .15s ease;
+}}
+.dpv-brand:hover {{ background: color-mix(in srgb, var(--s1) 6%, transparent); }}
 .dpv-brand .mark {{
-  width: 32px; height: 32px; border-radius: 9px; background: var(--surface-inv);
-  display: flex; align-items: center; justify-content: center; flex: none;
+  width: 36px; height: 36px; border-radius: 10px; flex: none;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(155deg, var(--surface-inv) 0%, color-mix(in srgb, var(--surface-inv) 82%, var(--s1) 30%) 100%);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--surface-inv) 35%, transparent);
 }}
 .dpv-brand .name {{
-  font-size: 13.5px; font-weight: 600; letter-spacing: -0.015em; color: var(--text-primary);
+  font-size: 16px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;
+  color: var(--text-primary);
 }}
-.dpv-brand .org {{ font-size: 11px; color: var(--text-muted); }}
 /* Streamlit dims inactive page links; the original keeps them legible. */
 [data-testid="stSidebar"] [data-testid="stPageLink"] a {{
   border-radius: 10px; padding: 7px 11px; font-size: 13px; font-weight: 500;

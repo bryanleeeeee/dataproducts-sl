@@ -137,7 +137,7 @@ def build_catalog_products(settings):
             "owner": entry["input"]["owner"],
             "evidence": "Estimate" if entry["input"]["evidenceLevel"] == "Estimated" else "Benchmark",
             "confidence": 35 if entry["input"]["evidenceLevel"] == "Estimated" else 55,
-            "lastUpdated": p["updatedAt"],
+            "lastUpdated": p["updatedAt"][:10],
             "evidenceRef": None,
         }]
         out.append(p)

@@ -1,7 +1,7 @@
 # Data Product Value — Streamlit
 
 Quantify the revenue, savings, productivity and risk value of data and AI
-investments, with the assumptions, evidence and confidence a CFO will accept.
+investments. Quantify. Prioritise. Track.
 
 This is a Python/Streamlit port of the React application at
 `data-product-value.vercel.app`. The valuation engine is a line-for-line

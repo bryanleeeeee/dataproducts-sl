@@ -42,7 +42,7 @@ def close(a, b, tol=TOL):
 
 
 def main() -> int:
-    golden = json.loads(open(GOLDEN).read())
+    golden = json.loads(open(GOLDEN, encoding="utf-8").read())
     settings = DEFAULT_SETTINGS
     products = build_catalog_products(settings)
     vals = [(p, value_product(p, settings)) for p in products]

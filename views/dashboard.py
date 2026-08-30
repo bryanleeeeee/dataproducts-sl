@@ -59,9 +59,8 @@ def render() -> None:
         How much is your data product worth?</h1>
       <p style="margin:16px 0 0;max-width:44em;font-size:15px;line-height:1.65;
          color:var(--text-secondary)">
-        Quantify the revenue, savings, productivity and risk value of your data and AI investments —
-        with the assumptions, evidence and confidence a CFO will accept.
-        <strong style="color:var(--text-primary)">Quantify. Prioritise. Prove.</strong></p>
+        Quantify the revenue, savings, productivity and risk value of your data and AI investments.
+        <strong style="color:var(--text-primary)">Quantify. Prioritise. Track.</strong></p>
     </div>""")
 
     hero_a, hero_b, hero_c = st.columns([1.1, 1, 3.4])
